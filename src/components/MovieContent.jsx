@@ -47,7 +47,7 @@ function MovieContent({ user, movies, addMovie, deleteMovie, updateMovie }) {
       type: movie.type
     });
     setLinks(movie.streamingLinks || [{ name: "Server 1", url: "" }]);
-    window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to form
+    window.scrollTo({ top: 0, behavior: 'smooth' }); 
   };
 
   const resetForm = () => {
@@ -227,7 +227,7 @@ function MovieContent({ user, movies, addMovie, deleteMovie, updateMovie }) {
                   </div>
                 </div>
                 <div className="space-y-3 md:space-y-4">
-                  <h4 className="flex items-center gap-2 font-black text-base md:text-lg text-white"><Info className="w-4 h-4 md:w-5 md:h-5 text-purple-500" /> Synopsis</h4>
+                  <h4 className="flex items-center gap-2 font-black text-base md:text-lg text-white"><Info className="w-4 h-4 md:w-5 md:h-5 text-purple-500" /> Description</h4>
                   <p className="text-neutral-400 text-sm md:text-lg leading-relaxed">{selectedMovie.description || "The explorers find themselves in a race against time."}</p>
                 </div>
                 <div className="space-y-4 pt-4 md:pt-6">
